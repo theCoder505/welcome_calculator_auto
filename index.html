@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css"
+        integrity="sha512-Cv93isQdFwaKBV+Z4X8kaVBYWHST58Xb/jVOcV9aRsGSArZsgAnFIhMpDoMDcFNoUtday1hdjn0nGp3+KZyyFw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <title> Main Welcome Calculator </title>
+
+    <link rel="icon" href="https://cdn1.iconfinder.com/data/icons/logos-brands-in-colors/231/among-us-player-white-512.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="site-wrapper">
+
+        <section class="range-slider-wrapper">
+            <div class="range-slider-container">
+                <div class="range-slider-block">
+                    <div id="range-sliders" class="range-sliders">
+
+                        <div id="flagHolder">
+                            <span id="flag"></span>
+                        </div>
+
+                        <div>
+                            <h3 align="center">Welcome Bonus Calculator</h3>
+
+                            <hr class="lineRow">
+
+                        </div>
+
+                        <div class="range-slider-group range-slider-group-red">
+                            <p class="range-label range-label-red">Deposit Amount</p>
+                            <input type="range" min="0" max="1000" value="460" data-color="#f00"
+                                class="range-slider range-slider-red depoisiteChange" id="range-slider-red" />
+                            <input type="number" min="0" max="1000" value="460"
+                                class="input-slider input-slider-red onDeposite" id="input-slider-red" />
+                        </div>
+                        <div class="range-slider-group range-slider-group-green">
+                            <p class="range-label range-label-green">Percentage Deposit Bonus ( % ) </p>
+                            <input type="range" min="0" max="500" value="300" data-color="#090"
+                                class="range-slider range-slider-green percentDepChange" id="range-slider-green" />
+                            <input type="number" min="0" max="500" value="300"
+                                class="input-slider input-slider-green onPercentDep" id="input-slider-green" />
+                        </div>
+                        <div class="range-slider-group range-slider-group-blue">
+                            <p class="range-label range-label-blue">Wagering</p>
+                            <input type="range" min="0" max="100" value="40" data-color="#00f"
+                                class="range-slider range-slider-blue wageringChange" id="range-slider-blue" />
+                            <input type="number" min="0" max="100" value="40"
+                                class="input-slider input-slider-blue onWagering" id="input-slider-blue" />
+                        </div>
+                        <div class="range-slider-group range-slider-group-last">
+                            <p class="range-label range-label-last">Game Contribution Percentage ( % )</p>
+                            <input type="range" min="0" max="100" value="0" data-color="#00f"
+                                class="range-slider range-slider-last gamePercentChange" id="range-slider-last" />
+                            <input type="number" min="0" max="100" value="0"
+                                class="input-slider input-slider-last onGamePercent" id="input-slider-last" />
+                        </div>
+
+
+                        <div id="bonusNCalc">
+                            <button id="bonusBtn" class="activated btnClass">Bonus</button>
+                            <span class="orClass"> Or </span>
+                            <button id="bonusNDepositeBtn" class="btnClass"> Bonus + Deposit </button>
+
+                            <!-- <button id="calculateBns" class="btnClass largeBtn"> Calculate Bonus </button> -->
+                        </div>
+
+                        <!-- <div id="calcShowingDiv" class="hide"> -->
+                        <div id="calcShowingDiv" class="">
+                            <hr class="lineRow2">
+
+                            <div id="flexDiv">
+
+                                <div class="freeBonus">
+                                    <p>
+                                        Free Bonus
+                                    </p>
+                                    <span class="bonusNumber boldFont">
+                                        1.38K
+                                    </span>
+                                </div>
+                                <div class="totalPlay">
+                                    <p>
+                                        Total Play Money
+                                    </p>
+                                    <span class="playMoneyNumber boldFont">
+                                        1.84K
+                                    </span>
+                                </div>
+                                <div class="needToBet">
+                                    <p>
+                                        You need to Bet
+                                    </p>
+                                    <span class="betNumber boldFont">
+                                        55.20K
+                                    </span>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/calculator.js"></script>
+    <script src="js/country.js"></script>
+
+</body>
+
+</html>

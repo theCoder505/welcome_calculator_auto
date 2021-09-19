@@ -1,0 +1,118 @@
+.site-wrapper input{
+    outline: none;
+
+}
+
+.lineRow {
+    margin: 0px auto;
+    width: 85%;
+    border-radius: 50%;
+    margin-top: 5px;
+}
+
+#flag {
+    width: 35px;
+    float: right;
+    position: relative;
+    right: -10px;
+    top: -10px;
+}
+
+
+#bonusNCalc {
+    width: 80%;
+    margin: 0px auto;
+}
+
+.btnClass {
+    padding: 7px 15px;
+    font-style: italic;
+    width: 40%;
+    margin: 10px auto;
+    border: 2px solid #406675;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.btnClass:hover{
+    background-color: #406675;
+    color: whitesmoke;
+}
+
+#bonusNDepositeBtn{
+    float: right;
+}
+
+.activated{
+    background-color: #406675;
+    color: whitesmoke;
+}
+
+
+.largeBtn {
+    width: 100%;
+    font-style: normal;
+    background: #40667538;
+    border: 3px dotted #406675;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.orClass{
+    margin-left: 7%;
+}
+
+.lineRow2{
+    margin: 15px auto;
+    width: 85%;
+    border-radius: 50%;
+}
+
+#flexDiv{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#flexDiv div {
+    background-color: #50a2a2;
+    color: whitesmoke;
+    margin: 5px auto;
+    width: 32%;
+    padding: 10px 5px;
+    text-align: center;
+    border-radius: 7px;
+}
+
+.needToBet{
+    background-color: tomato!important;
+}
+
+.boldFont{
+    font-weight: bold;
+    font-size: 23px;
+}
+
+#calcShowingDiv{
+    transition: all 1.5s ease;
+    opacity: 1;
+    height: auto;
+}
+
+.hide{
+    opacity: 0!important;
+    height: 0px!important;
+}
+
+
+@media only screen and (max-width: 600px) {
+    #flexDiv div, .btnClass{
+        width: 100%;
+    }
+    .orClass {
+        margin-left: 50%;
+    }
+    .range-slider-container {
+        padding: 0.7rem;
+    }
+  }
