@@ -66,6 +66,7 @@
                 val = max;
                 $thisInput.val(val);
                 alert("use maximum " + max + " value for this field");
+                freeBonus();
             }
 
             // Min Validation
@@ -73,6 +74,7 @@
                 val = min;
                 $thisInput.val(val);
                 alert("use minimum " + min + " value for this field");
+                freeBonus();
             }
 
             // Background Change
